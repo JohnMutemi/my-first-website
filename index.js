@@ -1,3 +1,4 @@
+// Update the count every 1000 milliseconds (1 second)
 document.addEventListener('DOMContentLoaded', function() {
     let counterElement = document.getElementById('infinity');
     if (counterElement) {
@@ -5,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setInterval(function() {
             count++;
             counterElement.innerText = count;
-        }, 1000); // Update the count every 1000 milliseconds (1 second)
+        }, 1000); 
     }
 });
 
@@ -63,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (seconds == 0) {
             if (minutes == 0) {
                 clearInterval(countdownTimer);
-                document.getElementById("timer").innerHTML = "<p>Time's up! Please send your message now.</p>";
+                document.getElementById("timer").innerHTML = "<p> Please send your message now!</p>";
                 return;
             } else {
                 minutes--;
