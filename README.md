@@ -1,0 +1,2 @@
+# My personal website
+The webpage displays my personal portfolio, showcasing my personal skills, projects and more about me. Through the portfolio potential clients can reach me in quest for services that I specialize in. 
