@@ -1,0 +1,251 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #f0f0f0; /* Light background for the entire page */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('./img/welcome-banner.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none; /* Removes underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Adds an underline on hover for better visibility */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px;
+}
+
+/* Hero Section */
+.hero h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* About Me Section */
+#about {
+    background-color: #eae7dc;
+    color: #333;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #ffffff; /* Light background for better readability */
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 2px solid #f0f0f0; /* Subtle separation from the next section */
+}
+
+.skills h2 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.skill-category {
+    margin: 20px 0;
+}
+
+.skill-category h3 {
+    color: #007bff; /* Theme color for headings */
+    margin-bottom: 15px;
+}
+
+.skill-description {
+    color: #666; /* Slightly subdued text for descriptions */
+    line-height: 1.6; /* Improved readability */
+}
+/* Portfolio Section */
+#portfolio {
+    background-color: #f8f9fa; /* A slightly off-white background for differentiation */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.portfolio h2 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.project-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-item {
+    background-color: #ffffff;
+    margin: 20px auto; /* Centers the item and adds vertical spacing */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    max-width: 75%; /* Limits item width for better layout on wider screens */
+    text-align: left; /* Aligns text to the left for readability */
+}
+
+.project-item strong {
+    color: #007bff; /* Highlights project names */
+}
+
+.project-item + .project-item {
+    margin-top: 30px; /* Adds space between project items */
+}
+
+@media (max-width: 768px) {
+    .project-item {
+        max-width: 90%; /* Allows more width on smaller screens */
+    }
+}
+
+/* Contact & Countdown Section */
+.contact-countdown {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.contact-form, .countdown {
+    flex: 1;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.contact-form h2, .countdown h2 {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#timer p {
+    font-size: 24px;
+}
+
+/* Personal Image Styles */
+.personal-image {
+    width: 150px; /* Adjust based on how small you want it */
+    height: auto; /* Keeps the aspect ratio intact */
+    border-radius: 50%; /* Creates a rounded effect */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    border: 3px solid white; /* Adds a white border around the image */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds a subtle shadow for depth */
+    display: block;
+    margin: 20px auto; /* Centers the image and adds margin for spacing */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
+.hero {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    min-height: 100vh; /* Makes sure the hero section is at least as tall as the viewport */
+    color: white; /* Adjust the text color as needed */
+    text-align: center; /* Ensures text is centered within its container */
+    background: url('./img/welcome-banner.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.container {
+    max-width: 1200px; /* Adjust based on your design preferences */
+    margin: 0 auto; /* Centers the container within the hero section */
+    padding: 0 15px; /* Adds some padding on the sides */
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap if necessary */
+    justify-content: center; /* Centers the items horizontally within the row */
+}
+
+.col-md-6 {
+    flex: 0 0 50%; /* Assigns the base size for each column */
+    max-width: 50%; /* Ensures that the column does not exceed half the container's width */
+    display: flex;
+    justify-content: center; /* Center content horizontally for each column */
+    align-items: center; /* Center content vertically for each column */
+    flex-direction: column; /* Stacks items vertically */
+}
+
+.btn {
+    margin: 10px; /* Adds some space around the buttons */
+    padding: 10px 20px; /* Adjusts padding for the buttons */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Rounds the corners */
+    background-color: #007bff; /* Example background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Kisinga - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<div id="hero" class="hero">
+    <div class="container">
+        <div class="row">
+            <!-- Text Section -->
+            <div class="col-md-6">
+                <h1>Welcome to my Portfolio</h1>
+                <h2>I'm John Kisinga</h2>
+                <p class="job-title">Full Stack Developer</p>
+                <!-- About and Explore Links -->
+                <a href="#about" class="btn btn-fill">About me</a>
+                <a href="#portfolio" class="btn btn-fill">Explore more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+<div id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Kisinga, a passionate full-stack developer dedicated to crafting innovative solutions and seamless user experiences.</p>
+</div>
+
+<!-- Skills Section -->
+<!-- Skills Section -->
+<div id="skills" class="section-skills">
+    <div class="container">
+        <h2>My Skills</h2>
+        <!-- HTML/CSS Skills -->
+        <div class="skill-category">
+            <h3>HTML/CSS</h3>
+            <p>Through HTML, I structure web content, while CSS lets me style it, ensuring websites are both accessible and aesthetically pleasing across different devices.</p>
+        </div>
+
+        <!-- Add other skill categories below -->
+        <div class="skill-category">
+            <h3>JavaScript</h3>
+            <p>JavaScript enables dynamic interactions on web pages, allowing me to manipulate the DOM in real-time and create rich, user-friendly web applications.</p>
+        </div>
+        <div class="skill-category">
+            <h3>Python</h3>
+            <p>Python's versatility and simplicity empower me to solve complex problems and automate tasks efficiently across web development, data analysis, and machine learning applications.</p>
+        </div>
+
+
+        <div class="skill-category">
+            <h3>Other Skills</h3>
+            <!-- Add specific skills as needed -->
+            <div class="skill">
+                <h4>React</h4>
+                <p>React allows me to develop responsive UIs with its component-based architecture, improving the user experience with efficient updates and state management.</p>
+            </div>
+            <div class="skill">
+                <h4>Node.js</h4>
+                <p>Utilizing Node.js, I build scalable and efficient server-side applications, leveraging its event-driven, non-blocking I/O model for optimal performance.</p>
+            </div>
+            <!-- Add more skills as needed -->
+        </div>
+    </div>
+</div>
+
+
+<!-- Portfolio Section -->
+
+
+<div id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+        <h2>Top Projects</h2>
+        <p>Below are my top three projects that have garnered me excellent reviews:</p>
+        <ul class="projects-list">
+            <li><strong>EcoSnap:</strong> A revolutionary platform for environmental activists to share and promote sustainability efforts, significantly impacting community engagement around global ecological issues.</li>
+            <li><strong>CodeFlow:</strong> An innovative code collaboration tool designed for developers, featuring real-time editing and feedback capabilities, which streamlined project management processes in software development teams.</li>
+            <li><strong>HealthTrack:</strong> A comprehensive health monitoring app that leverages AI to provide personalized fitness and nutrition plans, acclaimed for its accuracy and user-friendly interface, enhancing users' overall wellbeing.</li>
+        </ul>
+    </div>
+<!-- Counters Section -->
+<section class="site-section section-counters text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-xs-12">
+                <p id="infinity" class="counter" data-from="0" data-to="1" data-speed="1000">0</p>
+                <h4>Seconds on this site!<br>What are you waiting for?</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact & Countdown Section -->
+<div id="contact-countdown" class="contact-countdown">
+    <div class="container">
+        <div class="contact-form">
+            <h2>Send Me a Message</h2>
+            <form action="your-server-endpoint" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Type of message to hire me" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="countdown">
+            <h2>Hire Me Before Time Runs Out!</h2>
+            <div id="timer">
+                <p>Time Left: <span id="time">05:00</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="index.js"></script>
+</body>
+</html>
