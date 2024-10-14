@@ -9,12 +9,22 @@ html {
   background-color: #f0f0f0;
 }
 
-body {
-  font-family: Arial, sans-serif;
+/* General Reset */
+* {
   margin: 0;
   padding: 0;
-  background-color: rgb(194, 197, 197);
-  background-size: cover;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 a {
@@ -30,7 +40,7 @@ a:hover {
 nav {
   background-color: #343a40;
   color: white;
-  padding: 20px 0;
+  /* padding: 20px 0; */
   position: fixed;
   width: 100%;
   top: 0;
@@ -38,20 +48,29 @@ nav {
 }
 
 nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  list-style: none;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
 }
 
 nav ul li {
-  margin: 0 15px;
+  flex: 1;
+  text-align: center;
+  margin: 5px;
 }
 
 nav ul li a {
-  color: white;
+  color: #fff;
+  text-decoration: none;
+  display: block;
   padding: 10px;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  background: #333;
 }
 
 /* Hero Section */
@@ -60,6 +79,46 @@ nav ul li a {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 20px;
+}
+.hero {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: #fff; */
+  text-align: end;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* Responsive Grid Section */
+section.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+section.grid .card {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+section.grid .card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+section.grid .card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
 }
 
 /* About Me Section */
@@ -382,6 +441,18 @@ button[type='submit']:hover {
   border-radius: 8px;
 }
 
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
 .tech-stacks strong {
   font-size: 22px; /* Slightly larger font for headings */
   color: #34495e;
@@ -743,7 +814,12 @@ button {
 button:hover {
   background-color: #aeb9c0; /* Darker blue on hover */
 }
-
+/* Container */
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 /* Bottom social links */
 .contacts-bottom {
   margin-top: 30px;
@@ -944,4 +1020,61 @@ button:hover {
 
 .social-media a:hover {
   color: #004a99;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  section.grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  section.grid .card h3 {
+    font-size: 1.2rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
 }
