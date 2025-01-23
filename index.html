@@ -3,567 +3,267 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dev Kisinga - Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Dev|Kisinga Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
   </head>
   <body>
-    <!-- Navigation -->
-    <nav>
-      <ul>
-        <li><a href="#hero">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#skills">SKILLS</a></li>
-        <li><a href="#testimonials">TESTIMONIALS</a></li>
-        <li><a href="#contact">CONTACT ME</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-      </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-      <div class="container">
-        <div class="row" style="display: flex; align-items: flex-start">
-          <!-- Text Section -->
-          <div class="greetings-box">
-            <div class="greetings">
-              <article class="emoji-hi">👋</article>
-              <article
-                style="
-                  font-size: 18px;
-                  color: #333;
-                  font-family: Arial, sans-serif;
-                ">
-                Hi there, I'm
-                <br />
-                <strong
-                  class="name"
-                  style="font-size: 30px; color: #3498db; font-weight: bold">
-                  KISINGA
-                </strong>
-              </article>
+    <div class="wrapper">
+      <div class="cover cover-left"></div>
+      <div class="cover cover-right"></div>
+      <div class="book">
+        <div class="book-page page-left">
+          <div class="profile-page">
+            <img src="profile1.jpeg" alt="" />
+            <h1>John Kisinga</h1>
+            <h3>Software Developer</h3>
+            <div class="social-media">
+              <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+              <a href="#"><i class="bx bxl-twitter"></i></a>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+              <a href="#"><i class="bx bxl-github"></i></a>
             </div>
-            <!-- Role Section -->
-            <div class="role" style="flex: 1; margin-left: 20px">
-              <article>
-                <strong class="role-title">Software Developer</strong>
-                <br />
-                <span
-                  style="font-size: 20px; color: #3498db; font-weight: bold">
-                  Full Stack
-                </span>
-                <p class="about-me">
-                  Passionate about crafting impactful solutions through code. I
-                  thrive in building scalable and user-friendly applications,
-                  combining innovative thinking with technical skills to solve
-                  real-world problems.
+            <p>
+              Hi, I'm Kisinga, a full-stack web developer who is passionate
+              about crafting innovative solutions through code. I thrive at
+              scaling web applications using the latest technology stacks
+            </p>
+            <div class="btn-box">
+              <a href="#" class="btn">Download CV</a>
+              <a href="#" class="btn contact-me">Contact Me</a>
+            </div>
+          </div>
+        </div>
+        <!-- page 1 & 2 -->
+        <div class="book-page page-right turn" id="turn-1">
+          <!-- page(work experience) -->
+          <div class="page-front">
+            <h1 class="title">Work Experience</h1>
+            <div class="workeduc-box">
+              <div class="workeduc-content">
+                <span class="year"
+                  ><i class="bx bxs-calendar"></i>2024-2025</span
+                >
+                <h3>Web Developer -- Company X</h3>
+                <p>
+                  Worked with a relentless team to create robust websites and
+                  patch bugs on occurence
                 </p>
-                <a href="#about" class="know-more-button">
-                  Know More About Me <span class="arrow">→</span>
-                </a>
-              </article>
+              </div>
+              <div class="workeduc-content">
+                <span class="year"
+                  ><i class="bx bxs-calendar"></i>2024-2025</span
+                >
+                <h3>Web Developer -- Company X</h3>
+                <p>
+                  Worked with a relentless team to create robust websites and
+                  patch bugs on occurence
+                </p>
+              </div>
+              <div class="workeduc-content">
+                <span class="year"
+                  ><i class="bx bxs-calendar"></i>2024-2025</span
+                >
+                <h3>Web Developer -- Company X</h3>
+                <p>
+                  Worked with a relentless team to create robust websites and
+                  patch bugs on occurence
+                </p>
+              </div>
+              <div class="workeduc-content">
+                <span class="year"
+                  ><i class="bx bxs-calendar"></i>2024-2025</span
+                >
+                <h3>Web Developer -- Company X</h3>
+                <p>
+                  Worked with a relentless team to create robust websites and
+                  patch bugs on occurence
+                </p>
+              </div>
             </div>
+            <span class="number-page"> 1 </span>
+            <span class="nextprev-btn" data-page="turn-1">
+              <i class="bx bx-chevron-right"></i>
+            </span>
           </div>
-          <div class="photo">
-            <img src="./img/profile-pic.png" alt="Profile" />
-          </div>
-        </div>
-    </section>
-     <!-- Social Media Section -->
-        <div class="social-media">
-          <a
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener noreferrer">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a
-            href="https://www.twitter.com"
-            target="_blank"
-            rel="noopener noreferrer">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a
-            href="https://www.instagram.com"
-            target="_blank"
-            rel="noopener noreferrer">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </div>
-      </div>
-    <!-- About Section -->
-    <div class="about" id="about">
-      <div class="about-content">
-        <strong>
-          I build full stack applications using the latest technology stacks
-        </strong>
-        <article>
-          Passionate and proficient full stack developer with a proven ability
-          to boost productivity by over
-          <br />
-          <strong>80%</strong> through cutting-edge technologies and best
-          practices.
-        </article>
-        <div class="tech-stacks">
-          <div>
-            <strong>Python & TensorFlow</strong>
-            <img src="./img/tensor flow.png" alt="Python & TensorFlow" />
-            <article>
-              Skilled in Python and TensorFlow for developing optimized and
-              efficient solutions.
-            </article>
-          </div>
-          <div>
-            <strong>Flask</strong>
-            <img src="./img/Flask.png" alt="Flask" />
-            <article>
-              Proficient in building robust backend services with Flask for
-              scalable web apps.
-            </article>
-          </div>
-          <div>
-            <strong>React JS</strong>
-            <img src="./img/React.png" alt="React" />
-            <article>
-              Proficient in developing dynamic and user-friendly web
-              applications using React.
-            </article>
-          </div>
-          <div>
-            <strong>Artificial Intelligence</strong>
-            <img src="./img/AI.png" alt="Artificial Intelligence" />
-            <article>
-              Expert in building intelligent systems with advanced AI
-              algorithms.
-            </article>
-          </div>
-          <div>
-            <strong>Embedded Systems Development</strong>
-            <img
-              src="./img/embedded sys.png"
-              alt="Embedded Systems Development" />
-            <article>
-              Experienced in creating efficient embedded systems applications.
-            </article>
-          </div>
-          <div>
-            <strong>Internet of Things</strong>
-            <img src="./img/IoT.png" alt="Internet of Things" />
-            <article>
-              Specialized in designing IoT solutions for seamless connectivity
-              and automation.
-            </article>
+          <!-- page 2 (education) -->
+          <div class="page-back">
+            <h1 class="title">Education</h1>
+            <div class="workeduc-box">
+              <div class="workeduc-content">
+                <span class="year"><i class="bx bxs-calendar"></i>2024</span>
+                <h3>Software Engineering-- Moringa School</h3>
+                <p>Certificate of Completion</p>
+              </div>
+              <div class="workeduc-content">
+                <span class="year"
+                  ><i class="bx bxs-calendar"></i>2017-2022</span
+                >
+                <h3>Computer Science-- University of Kabianga</h3>
+                <p>Second Class Upper Division</p>
+              </div>
+            </div>
+            <span class="number-page"> 2 </span>
+            <!-- prev button -->
+            <span class="nextprev-btn back" data-page="turn-1">
+              <i class="bx bx-chevron-left"></i>
+            </span>
           </div>
         </div>
-      </div>
-      <div class="dots">
-        <svg
-          stroke="currentColor"
-          fill="currentColor"
-          strokeWidth="0"
-          viewBox="0 0 256 256"
-          height="200"
-          width="200"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M68,60a8,8,0,1,1-8-8A8,8,0,0,1,68,60Zm60-8a8,8,0,1,0,8,8A8,8,0,0,0,128,52Zm68,16a8,8,0,1,0-8-8A8,8,0,0,0,196,68ZM60,120a8,8,0,1,0,8,8A8,8,0,0,0,60,120Zm68,0a8,8,0,1,0,8,8A8,8,0,0,0,128,120Zm68,0a8,8,0,1,0,8,8A8,8,0,0,0,196,120ZM60,188a8,8,0,1,0,8,8A8,8,0,0,0,60,188Zm68,0a8,8,0,1,0,8,8A8,8,0,0,0,128,188Zm68,0a8,8,0,1,0,8,8A8,8,0,0,0,196,188Z"></path>
-        </svg>
-      </div>
-    </div>
-
-    <!-- Skills Section -->
-    <div id="skills" class="section-skills">
-      <div class="container">
-        <h2>My Skills</h2>
-
-        <!-- HTML/CSS Skills -->
-        <div class="skill-category">
-          <h3>JavaScript</h3>
-          <p>
-            JavaScript enables dynamic interactions on web pages, allowing me to
-            manipulate the DOM in real-time and create rich, user-friendly web
-            applications.
-          </p>
-        </div>
-
-        <div class="skill-category">
-          <h3>Python</h3>
-          <p>
-            Python's versatility and simplicity empower me to solve complex
-            problems and automate tasks efficiently across web development, data
-            analysis, and machine learning applications.
-          </p>
-        </div>
-
-        <div class="skill-category">
-          <h3>React</h3>
-          <p>
-            React allows me to develop responsive UIs with its component-based
-            architecture, improving the user experience with efficient updates
-            and state management.
-          </p>
-        </div>
-
-        <div class="skill-category">
-          <h3>Flask</h3>
-          <p>
-            Flask enables me to build lightweight and flexible web applications,
-            offering control and modularity in backend development.
-          </p>
-        </div>
-      </div>
-
-      <!-- Job Experience Section -->
-      <div class="container job-experience">
-        <h2>Job Experience</h2>
-
-        <div class="job-item">
-          <h4>Software Developer at ABC Corp</h4>
-          <p>
-            Developed and maintained web applications using React and Node.js.
-          </p>
-          <span class="date">Jan 2020 - Dec 2021</span>
-        </div>
-
-        <div class="job-item">
-          <h4>Frontend Engineer at XYZ Solutions</h4>
-          <p>
-            Focused on creating interactive UI components with React and Redux.
-          </p>
-          <span class="date">Feb 2018 - Dec 2019</span>
-        </div>
-
-        <div class="job-item">
-          <h4>Junior Developer at Tech Innovations</h4>
-          <p>
-            Assisted in developing internal tools using JavaScript and Python.
-          </p>
-          <span class="date">Jan 2016 - Jan 2018</span>
-        </div>
-
-        <div class="job-item">
-          <h4>Senior Developer at Your Company</h4>
-          <p>
-            Leading the front-end team, building scalable applications using
-            modern technologies.
-          </p>
-          <span class="date">Jan 2022 - Present</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-      <div class="container">
-        <h2>What Other People Say About Kisinga</h2>
-        <div class="testimonials-container">
-          <div class="testimonial">
-            <p class="quote">
-              "Kisinga brought efficiency and connectivity to our operations
-              with Software Development expertise. Cutting-edge solutions
-              consistently delivered!"
-            </p>
-            <p class="name">Abdur Rahim</p>
-            <p class="position">Managing Director - Waziup .eV</p>
+        <!-- page 3 & 4 -->
+        <div class="book-page page-right" id="turn-2">
+          <!-- page 3 my services -->
+          <div class="page-front">
+            <h1 class="title">My Services</h1>
+            <div class="services-box">
+              <div class="services-content">
+                <i class="bx bx-code-alt"></i>
+                <h3>Web Development</h3>
+                <p>
+                  A skilled web developer dedicated to meet your needs using the
+                  latest technology stacks
+                </p>
+                <a href="#" class="btn">Read More</a>
+              </div>
+              <div class="services-content">
+                <i class="bx bx-code-alt"></i>
+                <h3>Web Development</h3>
+                <p>
+                  A skilled web developer dedicated to meet your needs using the
+                  latest technology stacks
+                </p>
+                <a href="#" class="btn">Read More</a>
+              </div>
+              <div class="services-content">
+                <i class="bx bx-code-alt"></i>
+                <h3>Web Development</h3>
+                <p>A skilled web developer dedicated to meet your needs.</p>
+                <a href="#" class="btn">Read More</a>
+              </div>
+              <div class="services-content">
+                <i class="bx bx-code-alt"></i>
+                <h3>Web Development</h3>
+                <p>A skilled web developer dedicated to meet your needs.</p>
+                <a href="#" class="btn">Read More</a>
+              </div>
+            </div>
+            <span class="number-page"> 3 </span>
+            <span class="nextprev-btn" data-page="turn-2">
+              <i class="bx bx-chevron-right"></i>
+            </span>
           </div>
-
-          <div class="testimonial">
-            <p class="quote">
-              "Kisinga is a competent software developer. His expertise in React
-              and Python has boosted our productivity by over 80%. Impressive
-              work!"
-            </p>
-            <p class="name">Solomon Githu</p>
-            <p class="position">IoT Developer & Researcher - Waziup .eV</p>
-          </div>
-
-          <div class="testimonial">
-            <p class="quote">
-              "Kisinga delivered an outstanding React JS web app, focusing on a
-              seamless user experience. Trustworthy and skilled developer!"
-            </p>
-            <p class="name">Oliver Kipkemei</p>
-            <p class="position">Frontend Developer - Waziup .eV</p>
-          </div>
-
-          <div class="testimonial">
-            <p class="quote">
-              "Kisinga excels in crafting intelligent solutions with
-              cutting-edge AI algorithms. A go-to developer for AI projects!"
-            </p>
-            <p class="name">Clinton Oduor</p>
-            <p class="position">ML Engineer - Amini AI</p>
+          <!-- page 4 my skills -->
+          <div class="page-back">
+            <h1 class="title">My Skills</h1>
+            <div class="skills-box">
+              <div class="skills-content">
+                <h3>Front-End</h3>
+                <div class="content">
+                  <span> <i class="bx bxs-file-html"></i>HTML </span>
+                  <span> <i class="bx bxs-file-css"></i>CSS</span>
+                  <span><i class="bx bxl-javascript"></i>Javascript</span>
+                  <span><i class="bx bxl-react"></i>React</span>
+                  <span><i class="bx bxl-tailwind-css"></i>Tailwind</span>
+                  <span><i class="bx bxl-bootstrap"></i>Bootstrap</span>
+                </div>
+              </div>
+              <div class="skills-content">
+                <h3>Backend</h3>
+                <div class="content">
+                  <span> <i class="bx bxl-python"></i>Python </span>
+                  <span> <i class="bx bxl-flask"></i>Flask</span>
+                </div>
+              </div>
+              <div class="skills-content">
+                <h3>UI/UX Design</h3>
+                <div class="content">
+                  <span> <i class="bx bxl-figma"></i> Figma</span>
+                </div>
+              </div>
+            </div>
+            <span class="number-page"> 4 </span>
+            <!-- prev button -->
+            <span class="nextprev-btn back" data-page="turn-2">
+              <i class="bx bx-chevron-left"></i>
+            </span>
           </div>
         </div>
-      </div>
-    </section>
+        <!-- page 5 & 6 -->
+        <div class="book-page page-right" id="turn-3">
+          <div class="page-front">
+            <h1 class="title">Latest Project</h1>
+            <div class="portfolio-box">
+              <div class="img-box">
+                <img src="tiketitamasha.png" alt="" />
+              </div>
 
-    <!-- Projects Section -->
-    <div class="projects" id="projects">
-      <div class="projects-children">
-        <strong class="heading"
-          >Check out my amazing projects from the catalog</strong
-        >
-        <!-- Project Category Selector -->
-        <!-- <select name="project-category" id="project-category">
-          <option value="">All</option>
-          <option value="react">React</option>
-          <option value="iot">IoT</option>
-          <option value="machine-learning">Machine Learning</option>
-          <option value="web-apps">Web Apps</option>
-        </select> -->
-
-        <!-- Projects List -->
-        <div class="projects-list">
-          <a
-            href="https://github.com/your-username/patient-doctor-management-system"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project">
-            <strong>Patient-Doctor Management System</strong>
-            <img
-              src="./img/medicare.png"
-              alt="Patient-Doctor Management System" />
-            <article>
-              A comprehensive system for managing patient records, appointments,
-              and doctor schedules.
-            </article>
-          </a>
-
-          <a
-            href="https://github.com/your-username/blog-application"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project">
-            <strong>Blog Application</strong>
-            <img src="./img/blogs.jpg" alt="Blog Application" />
-            <article>
-              A platform for creating, managing, and sharing blog posts.
-            </article>
-          </a>
-
-          <a
-            href="https://github.com/your-username/scholar-solutions"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project">
-            <strong>Scholar Solutions</strong>
-            <img src="./img/scholar-solutions.jpg" alt="Scholar Solutions" />
-            <article>
-              A platform that offers professional writing services tailored to
-              meet client's needs.
-            </article>
-          </a>
-
-          <a
-            href="https://github.com/your-username/cli-banking-system"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project">
-            <strong>CLI Banking System</strong>
-            <img
-              src="./img/cli.png"
-              alt="CLI Banking System" />
-            <article>
-              A command-line interface for managing banking transactions.
-            </article>
-          </a>
-
-          <a
-            href="https://github.com/your-username/makuti-cars-marketing-system"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project">
-            <strong>Makuti Cars Marketing System</strong>
-            <img
-              src="./img/cars.png"
-              alt="Makuti Cars Marketing System" />
-            <article>
-              A marketing system for promoting and managing car sales.
-            </article>
-          </a>
-
-          <a
-            href="https://github.com/JohnMutemi/tiketiTamasha_FrontEnd"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project">
-            <strong>Tiketi Tamasha</strong>
-            <img src="./img/tiketitamasha.jpg" alt="Tiketi Tamasha" />
-            <article>
-              An event-management system for organizing and managing events.
-            </article>
-          </a>
-        </div>
-      </div>
-
-      <!-- Contacts Section -->
-      <div id="contact" class="contacts">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://twitter.com/JoeMusya">
-          <img src="/assets/twitter-icon.svg" alt="Twitter" />
-        </a>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/JosephMusya">
-          <img src="/assets/github-icon.svg" alt="GitHub" />
-        </a>
-      </div>
-    </div>
-
-    <!-- Counters Section -->
-    <section class="site-section section-counters text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4 col-xs-12">
-            <p
-              id="infinity"
-              class="counter"
-              data-from="0"
-              data-to="1"
-              data-speed="1000">
-              0
-            </p>
-            <h4>Seconds on this site!<br />What are you waiting for?</h4>
+              <div class="info-box">
+                <div class="info-title">
+                  <h3>Tiketi Tamasha</h3>
+                  <a href="#"
+                    >Live Preview<i class="bx bx-link-external"></i
+                  ></a>
+                </div>
+                <p>Tech Used:</p>
+                <p>React, CSS, Flask, Javascript</p>
+              </div>
+              <div class="btn-box">
+                <a href="#" class="btn"> Source Code</a>
+                <a href="#" class="btn">More Projects</a>
+              </div>
+            </div>
+            <span class="number-page"> 5</span>
+            <!-- next button -->
+            <span class="nextprev-btn" data-page="turn-3">
+              <i class="bx bx-chevron-right"></i>
+            </span>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Contact & Countdown Section -->
-    <div id="contacts" class="contact-countdown">
-      <div class="container">
-        <!-- Contact Form Section -->
-        <div class="contact-form">
-          <h2>Drop me a direct message!</h2>
+          <div class="page-back">
+            <h1 class="title">Contact Me!</h1>
 
-          <!-- Personal Information -->
-          <div class="personal">
             <div class="contact-box">
-              <strong>Address</strong>
-              <img
-                src="./img/address icon.png"
-                alt="Address Icon"
-                height="60"
-                width="60" />
-              <article>Nairobi</article>
+              <form action="#">
+                <input
+                  type="text"
+                  class="field"
+                  placeholder="Full Name"
+                  required />
+                <input
+                  type="text"
+                  class="field"
+                  placeholder="Email Address"
+                  required />
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  class="field"
+                  placeholder="Your Message"
+                  required></textarea>
+                <input type="text" class="btn" value="Send Message" />
+              </form>
             </div>
-            <div class="contact-box">
-              <strong>Gmail</strong>
-              <img
-                src="./img/gmail icon.png"
-                alt="Gmail Icon"
-                height="60"
-                width="60" />
-              <article>jmtutorsalp@gmail.com</article>
-            </div>
-            <div class="contact-box">
-              <strong>Phone</strong>
-              <img
-                src="./img/phone icon.png"
-                alt="Phone Icon"
-                height="60"
-                width="60" />
-              <article>+254112240468</article>
-            </div>
-          </div>
-
-          <!-- CV Download Section -->
-          <div class="cv-download">
-            <strong>Download My CV</strong>
-            <a
-              href="https://drive.google.com/file/d/1uYs_UilYQ0VxKIsZD6gTwMJRPqEcqNyM/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="cv-button">
-              Download CV
-            </a>
-          </div>
-
-          <!-- Message Form -->
-          <form action="your-server-endpoint" method="POST" class="message-me">
-            <div>
-              <input
-                type="text"
-                id="message"
-                name="message"
-                placeholder="Say Hi to Kisinga!"
-                required />
-            </div>
-            <div>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email"
-                required />
-            </div>
-            <div class="reason">
-              <select name="contact-me" id="reason" required>
-                <option value="Project Collaboration">
-                  Project Collaboration
-                </option>
-                <option value="Job Offer">Job Offer</option>
-                <option value="Freelance Work">Freelance Work</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-            <button type="submit">SEND</button>
-          </form>
-
-          <!-- Social Links -->
-          <div class="contacts-bottom">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://twitter.com/JoeMusya">
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 512 512"
-                height="22"
-                width="22"
-                xmlns="http://www.w3.org/2000/svg">
-                <!-- Twitter Icon Path -->
-              </svg>
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/JohnMutemi">
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 496 512"
-                height="22"
-                width="22"
-                xmlns="http://www.w3.org/2000/svg">
-                <!-- GitHub Icon Path -->
-              </svg>
+            <span class="number-page"> 6</span>
+            <!-- prev button -->
+            <span class="nextprev-btn back" data-page="turn-3">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+            <a href="#" class="back-profile">
+              <p>Profile</p>
+              <i class="bx bx-user"></i>
             </a>
           </div>
         </div>
-
-        <!-- Countdown Section -->
-        <div class="countdown">
-          <h2>Hire Me Before Time Runs Out!</h2>
-          <div id="timer">
-            <p>Time Left: <span id="time">05:00</span></p>
-          </div>
-        </div>
       </div>
     </div>
-
-    <script src="index.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
