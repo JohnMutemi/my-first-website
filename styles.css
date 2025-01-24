@@ -457,3 +457,117 @@ body {
   transform: translateX(-50%) scale(1);
   top: -1.8rem;
 }
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  :root {
+    --bg-color: #081b29;
+    --main-color: #00abf0;
+    --text-color: #333;
+    --second-text-color: #555;
+    --white-color: #fff;
+    --cover-color: linear-gradient(45deg, #00abf0, #006e9a);
+    --pages-color: linear-gradient(90deg, #fff, #ddd);
+    --border: 0.1rem solid #00abf0;
+    --box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.2);
+  }
+
+  body {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .wrapper {
+    width: 90%;
+    height: auto; /* Allow dynamic height */
+    padding: 1rem;
+  }
+
+  .cover {
+    width: 100%;
+    height: 12rem; /* Scaled down cover size */
+    border-radius: 0.4rem;
+  }
+
+  .cover.cover-right {
+    transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  .book {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .book-page {
+    width: 100%;
+    height: auto; /* Dynamic height for content */
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-page.page-left {
+    box-shadow: -0.4rem 0.4rem 0.4rem rgba(0, 0, 0, 0.1);
+  }
+
+  .profile-page {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .profile-page img {
+    max-width: 100px;
+    margin-bottom: 0.5rem;
+  }
+
+  .profile-page h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .profile-page h3 {
+    font-size: 1.2rem;
+  }
+
+  .profile-page p {
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  .btn {
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 0.9rem;
+    margin: 0.5rem;
+  }
+
+  .skills-box .skills-content .content span {
+    width: 5rem;
+    height: 4rem;
+  }
+
+  .portfolio-box .img-box {
+    height: 10rem;
+  }
+
+  .contact-box .field {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .contact-box textarea {
+    height: 10rem;
+  }
+
+  .contact-box .btn {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+  }
+
+  .back-profile {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.8rem;
+  }
+}
